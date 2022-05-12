@@ -6,11 +6,10 @@
 </head>
 <style>
     div {
-        
-       
         font-size: 20px;
         height: 80px;
     }
+
     body {
         margin: 0;
         background-color: #466f42;
@@ -30,6 +29,7 @@
         width: 20%;
         height: 1000px;
     }
+
     #sidebar1 {
         background-color: #335030;
         position: absolute;
@@ -39,9 +39,8 @@
     }
 
     #main {
-        background-color:#466f42;
+        background-color: #466f42;
         height: 1000px;
-
         margin-right: 25%;
         border: 2px;
         margin-left: 25%;
@@ -60,6 +59,7 @@
         width: 45%;
         height: 1000px;
     }
+
     .layer2 {
         width: 200px; /* Ширина */
         height: 20%;
@@ -74,16 +74,17 @@
         padding: 4px; /* Поля */
         background: #486628; /* Колір фона */
     }
+
     #footer {
         width: 100%; /* Ширина */
         height: 40px;
         padding: 4px; /* Поля */
         background: #22651b; /* Колір фона */
     }
+
     a:link, a:visited {
         background-color: #35445C;
         border: 2px aqua;
-        
         color: #0D1117;
         padding: 5px 5px;
         text-align: center;
@@ -95,10 +96,36 @@
         cursor: pointer;
         display: inline-block;
     }
+
     h1, h2, h3, h4, h5, h6 {
         font-family: Pompadur, 'Comic Sans MS', cursive;
     }
+
+    img {
+        border: 15px solid #228B22;
+    }
 </style>
+<script language="JavaScript">
+    function calculation() {
+
+        var i = -10;
+        for (var i; i < 10; i = i + 2) {
+            var x = -10;
+            var y = -10;
+            var z = -10;
+            x = x + i;
+            y = y + i;
+            z = z + i;
+            result = Math.pow(x, 6) + Math.pow(x, 5) * y + 0.5 * z + Math.pow(x, 2);
+            alert(result);
+        }
+    }
+
+</script>
+<form>
+    <input type="button" value="Розрахунок" onClick="calculation()">
+</form>
+</script>
     </head>
 <body>
     <div class="layer3">
@@ -127,25 +154,35 @@
 
         </center>
     </div>
-    <div id="sidebar1"><h2>Тойота Супра • 1 покоління (A40) • 1978–1981</h2>
-                           <p><h3>Перша Toyota Supra з'явилася у 1978 році. Машина оснащувалась "шісткою" об'ємом від 2,0 до 2,7 літра потужністю 111-118 л. с.. У продажу модель була представлена ​​з п'ятиступінчастою механічною коробкою передач та чотириступінчастим "автоматом". Випуск автомобіля завершився 1981 року.</h3></p>
-         
-         </div>
+    <div id="sidebar1">
+        <h2>Тойота Супра • 1 покоління (A40) • 1978–1981</h2>
+        <p><h3>Перша Toyota Supra з'явилася у 1978 році. Машина оснащувалась "шісткою" об'ємом від 2,0 до 2,7 літра потужністю 111-118 л. с.. У продажу модель була представлена ​​з п'ятиступінчастою механічною коробкою передач та чотириступінчастим "автоматом". Випуск автомобіля завершився 1981 року.</h3></p>
+        <p> <img src="https://github.com/M4ksd/praktik/blob/main/p.jpg?raw=true" width="100%" height="100%" /></p>
+    </div>
     <div id="main">
-        <div id="menu"><h2>
-    Тойота Супра • 2 покоління (A60) • 1981–1986
-</h2>
-    <p><h3>"Друга" Toyota Supra з індексом A60 з'явилася у продажу в 1982 році. На моделі встановлювали двигуни об'ємом 2,0 та 2,8 літрів потужністю від 126 до 175 л. с. Виробництво «Супри» другого покоління завершилося 1986 року.</h3></p>
-
-</div>
+        <div id="menu">
+            <h2>
+                Тойота Супра • 2 покоління (A60) • 1981–1986
+            </h2>
+            <p><h3>"Друга" Toyota Supra з індексом A60 з'явилася у продажу в 1982 році. На моделі встановлювали двигуни об'ємом 2,0 та 2,8 літрів потужністю від 126 до 175 л. с. Виробництво «Супри» другого покоління завершилося 1986 року.</h3></p>
+            <p> <img src="https://github.com/M4ksd/praktik/blob/main/toyota_supra_2.jpg?raw=true" width="100%" height="100%" /></p>
+        </div>
         <div id="content">
             <h2>
                 Тойота Супра • 3 покоління (A70) • 1986–1992
             </h2>
             <p><h3>Автомобіль Toyota Supra третього покоління випускався з 1986 до 1992 року. Машина також оснащувалась рядними "шістками", але тепер це були нові агрегати об'ємом 2,0, 2,5 і 3,0 літрів, у лінійці двигунів були присутні і атмосферні варіанти, і модифікації з турбонаддувом. Крім того, на місцевому ринку пропонувалася версія з найпотужнішим мотором 2.5, що розвиває 280 л. с.</h3></p>
+            <p> <img src="https://github.com/M4ksd/praktik/blob/main/toyota_supra_3.jpg?raw=true " width="100%" height="100%" /></p>
         </div>
 
     </div>
-    <div id="footer">Футер</div>
+    <div id="footer">
+        <form>
+          
+            <input type="button" value="Calculate" onClick="calculation()">
+
+        </form>
+        
+    </div>
 </body>
 </html>
